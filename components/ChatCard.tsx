@@ -1,13 +1,15 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
 
 export default function ChatCard() {
   return (
     <View style={styles.chatCard}>
-      <View style={styles.profilePic}></View>
+      <View>
+        <Image style={styles.profilePic} source={require('../assets/profile-pic.png')} />
+      </View>
       <View style={styles.profileChat}>
         <View style={styles.profileChatTitle}>
           <Text>Profile Name</Text>
-          <Text>12/06/24</Text>
+          <Text style={{marginRight: 5}}>12/06/24</Text>
         </View>
         <Text style={styles.profileChatDetail}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Text>
       </View>
@@ -32,7 +34,6 @@ const styles = StyleSheet.create({
   profileChatTitle: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    minWidth: '80%',
     // borderWidth: 2,
   },
   profileChatDetail: {

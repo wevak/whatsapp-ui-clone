@@ -17,7 +17,6 @@ export default function MainScreen() {
       <ChatCard />
       <ChatCard />
       <ChatCard />
-      <Link href={'details'}>DetailsScreenLink</Link>
     </ScrollView>
   );
 }
