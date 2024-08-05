@@ -15,7 +15,6 @@ export default function HomeLayout() {
         </View>
       }}>
         <Stack.Screen name="index" />
-        <Stack.Screen name="details" />
     </Stack>
   );
 }

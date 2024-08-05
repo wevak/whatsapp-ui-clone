@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet, Image } from "react-native";
 
-export default function ChatCard() {
+export default function ChatCard({ profileName, date, profileChat }) {
   return (
     <View style={styles.chatCard}>
       <View>
@@ -8,10 +8,10 @@ export default function ChatCard() {
       </View>
       <View style={styles.profileChat}>
         <View style={styles.profileChatTitle}>
-          <Text>Profile Name</Text>
-          <Text style={{marginRight: 5}}>12/06/24</Text>
+          <Text>{profileName ? profileName : "Profile Name"}</Text>
+          <Text style={{marginRight: 5}}>{date ? date : "12/06/24"}</Text>
         </View>
-        <Text style={styles.profileChatDetail}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Text>
+        <Text style={styles.profileChatDetail}>{profileChat ? profileChat : "Lorem, ipsum dolor sit amet consectetur adipisicing elit."}</Text>
       </View>
     </View>
   )

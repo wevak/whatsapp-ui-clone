@@ -17,6 +17,7 @@ export default function MainScreen() {
       <ChatCard />
       <ChatCard />
       <ChatCard />
+      {/* <View style={styles.selectContact} /> */}
     </ScrollView>
   );
 }
@@ -54,5 +55,15 @@ const styles = StyleSheet.create({
   },
   profileChatDetail: {
     fontSize: 12
+  },
+  selectContact: {
+    position: 'absolute',
+    width: 20,
+    height: 20,
+    // left: -1,
+    // top: -1,
+    // bottom: 0,
+    right: 0,
+    borderWidth: 2
   }
 });
