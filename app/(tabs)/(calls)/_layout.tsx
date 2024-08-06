@@ -15,7 +15,7 @@ export default function HomeLayout() {
           <FontAwesome6 name="ellipsis-vertical" size={24} color="black" style={{marginRight: 20}} />
         </View>
       }}>
-        <Stack.Screen name="details" />
+        <Stack.Screen name="calls" />
     </Stack>
   );
 }
